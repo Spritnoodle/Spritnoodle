@@ -22,6 +22,8 @@ public class AdminEntityGenerator extends GenericGenerator {
 
 	@Autowired
 	RoleManager roleManager;
+	
+	
 
 	@Test
 	public void gen_group() {
@@ -48,5 +50,6 @@ public class AdminEntityGenerator extends GenericGenerator {
 			this.userManager.save(u);
 		}
 	}
+	
 
 }

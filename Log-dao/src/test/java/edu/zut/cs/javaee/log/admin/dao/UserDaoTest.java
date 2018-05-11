@@ -30,5 +30,11 @@ class UserDaoTest {
 		// assertEquals(user, expectedUser);
 		// assertEquals(user.getUsername(), expectedUser.getUsername());
 	}
-
+	
+	/*
+	@Test
+	public void test() {
+		
+	}
+	*/
 }

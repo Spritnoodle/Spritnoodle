@@ -4,17 +4,23 @@ import java.util.Date;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.NamedQueries;
+import javax.persistence.NamedQuery;
 import javax.persistence.Table;
 
-import edu.zut.cs.javaee.log.base.domain.BaseEntity;
+import edu.zut.cs.javaee.log.base.domain.BaseTreeEntity;
 
 @Table(name = "T_MESSAGE")
 @Entity
-public class Message extends BaseEntity{
+@NamedQueries({@NamedQuery(name="Message.getRoot",query="select m from Message m where m.parent is null")})
+public class Message extends BaseTreeEntity<Message>{
 	/**
 	 * 
 	 */
-	private static final long serialVersionUID = -4376674977047164142L;
+	private static final long serialVersionUID = 236343542380911251L;
+	/**
+	 * 
+	 */
 	
 	@Column(name = "MESSAGE")
 	private String message;
