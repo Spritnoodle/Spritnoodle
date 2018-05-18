@@ -6,6 +6,7 @@ import org.junit.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 
 import edu.zut.cs.javaee.log.admin.domain.Group;
+import edu.zut.cs.javaee.log.admin.domain.Message;
 import edu.zut.cs.javaee.log.admin.domain.User;
 import edu.zut.cs.javaee.log.admin.service.GroupManager;
 import edu.zut.cs.javaee.log.admin.service.RoleManager;
@@ -23,8 +24,10 @@ public class AdminEntityGenerator extends GenericGenerator {
 	@Autowired
 	RoleManager roleManager;
 	
+	@Autowired
+	MessageManager messageManager;
 	
-
+	/*
 	@Test
 	public void gen_group() {
 		for (int i = 0; i < 10; i++) {
@@ -48,6 +51,15 @@ public class AdminEntityGenerator extends GenericGenerator {
 			u.setPassword("password_" + i);
 			u.setGroup(g);
 			this.userManager.save(u);
+		}
+	}
+	*/
+	@Test
+	public void gen_message() {
+		for (int i = 0; i < 10; i++) {
+			Message m = new Message();
+			m.setMessage("message_" + i);
+			this.messageManager.save(m);
 		}
 	}
 	
