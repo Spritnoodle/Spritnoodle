@@ -58,16 +58,4 @@ public class Message extends BaseTreeEntity<Message>{
 	public void setCommenter(String commenter) {
 		this.commenter = commenter;
 	}
-	/*
-	@ManyToOne
-	@JoinColumn(name = "GROUP_ID")
-	Group group;
-	public Group getGroup() {
-		return group;
-	}
-
-	public void setGroup(Group group) {
-		this.group = group;
-	}
-	*/
 }
