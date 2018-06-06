@@ -5,4 +5,7 @@ import edu.zut.cs.javaee.log.base.dao.GenericTreeDao;
 
 public interface ModuleManagementDao extends GenericTreeDao<ModuleManagement,Long> {
 
+//注释
+
+
 }
