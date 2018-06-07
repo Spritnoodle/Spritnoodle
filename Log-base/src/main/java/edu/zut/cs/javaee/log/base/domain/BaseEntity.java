@@ -15,12 +15,13 @@ import org.apache.commons.lang3.builder.ToStringBuilder;
 import org.apache.commons.lang3.builder.ToStringStyle;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+
 @MappedSuperclass
 @JsonIgnoreProperties(value = { "hibernateLazyInitializer", "handler" })
 public class BaseEntity extends BaseDomain {
 
 	/**
-	 * 
+	 *
 	 */
 	private static final long serialVersionUID = -6163675075289529459L;
 
@@ -32,14 +33,14 @@ public class BaseEntity extends BaseDomain {
 	 * 实体修改时间
 	 */
 	@Temporal(TemporalType.TIMESTAMP)
-	@Column(name = "DATEMODIFED")
+	@Column(name = "DATEMODIFIED")
 	protected Date dateModified = new Date();
 
 	/**
 	 * 实体是否被删除
 	 */
 	@Column(name = "DELETED")
-	protected Boolean deleted = false;
+	protected Boolean deleted;
 
 	@Column(name = "ENTITY_NAME")
 	protected String entityName;
@@ -120,3 +121,4 @@ public class BaseEntity extends BaseDomain {
 	}
 
 }
+

@@ -2,9 +2,17 @@ package edu.zut.cs.javaee.log.customer.service;
 
 import java.util.List;
 
-import edu.zut.cs.javaee.log.admin.domain.User;
+import edu.zut.cs.javaee.log.base.service.GenericManager;
+import edu.zut.cs.javaee.log.customer.domain.Customer;
 
-public interface CustomerManager {
+public interface CustomerManager extends GenericManager<Customer, Long> {
+
+    /**
+     * 
+     * @param fullname
+     * @return
+     */
+	List<Customer> findByFullname(String fullname);
 
     /**
      * get customers according to postcode
@@ -12,5 +20,5 @@ public interface CustomerManager {
      * @param postcode
      * @return
      */
-    List<User> findByPostcode(String postcode);
+    List<Customer> findByPostcode(String postcode);
 }

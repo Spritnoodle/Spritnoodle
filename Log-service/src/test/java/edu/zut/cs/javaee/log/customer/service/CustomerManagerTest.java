@@ -1,38 +1,53 @@
 package edu.zut.cs.javaee.log.customer.service;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertNotNull;
 
-import java.util.ArrayList;
 import java.util.List;
 
 import org.junit.Test;
-import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.test.context.ContextConfiguration;
-import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
-import edu.zut.cs.javaee.log.admin.domain.User;
-import edu.zut.cs.javaee.log.admin.service.AdminServiceConfig;
-import edu.zut.cs.javaee.log.customer.service.CustomerManager;
+import edu.zut.cs.javaee.log.base.service.GenericManagerTestCase;
+import edu.zut.cs.javaee.log.customer.domain.Customer;
 
-@RunWith(SpringJUnit4ClassRunner.class)
-@ContextConfiguration(classes = AdminServiceConfig.class)
-public class CustomerManagerTest {
+public class CustomerManagerTest extends GenericManagerTestCase<Long, Customer, CustomerManager> {
 
-    @Autowired
-    CustomerManager customerManager;
+	CustomerManager customerManager;
 
-    @Test
-    public void testFindByPostcode() {
-        String postcode = "NR74DU";
-        List<User> result = this.customerManager.findByPostcode(postcode);
-        List<User> expected = new ArrayList<User>();
-        for (int i = 0; i < 10; i++) {
-            User u = new User();
-            expected.add(u);
-        }
-        assertEquals(expected.size(), result.size());
+	public CustomerManagerTest() {
+		super(Customer.class);
+	}
 
-    }
+	@Autowired
+	public void setCustomerManager(CustomerManager customerManager) {
+		this.customerManager = customerManager;
+		this.manager = this.customerManager;
+	}
+
+	@Override
+	public void setUp() throws Exception {
+		Customer customer = new Customer();
+		customer.setFullname("张三");
+		customer.setAddress("河南省郑州市");
+		customer.setPostcode("450007");
+		this.entity = this.manager.save(customer);
+	}
+
+	@Test
+	public void testFindByFullname() {
+		List<Customer> result = this.customerManager.findByFullname("张");
+		assertNotNull(result);
+		assertEquals(1, result.size());
+		assertEquals("张三", result.get(0).getFullname());
+	}
+
+	@Test
+	public void testFindByPostcode() {
+		String postcode = this.entity.getPostcode();
+		List<Customer> result = this.customerManager.findByPostcode(postcode);
+		assertEquals(postcode, result.get(0).getPostcode());
+
+	}
 
 }

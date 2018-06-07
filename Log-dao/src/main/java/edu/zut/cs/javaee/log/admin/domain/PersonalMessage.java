@@ -1,10 +1,7 @@
 package edu.zut.cs.javaee.log.admin.domain;
 
-
-
 import javax.persistence.Column;
 import javax.persistence.Entity;
-
 
 import javax.persistence.NamedQueries;
 import javax.persistence.NamedQuery;
