@@ -74,7 +74,7 @@ public class AdminEntityGenerator extends GenericGenerator {
 			this.userManager.save(u);
 		}
 	}
-	
+	*/
 	@Test
 	public void gen_message() {
 		for (int i = 0; i < 10; i++) {
@@ -83,7 +83,7 @@ public class AdminEntityGenerator extends GenericGenerator {
 			this.messageManager.save(m);
 		}
 	}
-	
+	/*
 	@Test
 	public void gen_personalWeekly() {
 		for(int i=0;i<10;i++) {
@@ -129,7 +129,7 @@ public class AdminEntityGenerator extends GenericGenerator {
 		}
 	}
 	*/
-	
+	/*
 	@Test
 	public void gen_statistics() {
 		for (int i = 0; i < 10; i++) {
@@ -138,4 +138,5 @@ public class AdminEntityGenerator extends GenericGenerator {
 			this.statisticsManager.save(m);
 		}
 	}
+	*/
 }

@@ -27,7 +27,7 @@ public class Message extends BaseTreeEntity<Message>{
 	@Column(name = "MESSAGE")
 	private String message;
 	@Column(name = "DATE")
-	private Date date;
+	private String date;
 	@Column(name = "AUTHOR")
 	private String author;
 	@Column(name = "COMMENTER")
@@ -40,10 +40,10 @@ public class Message extends BaseTreeEntity<Message>{
 		this.message = message;
 	}
 	
-	public Date getDate() {
+	public String getDate() {
 		return date;
 	}
-	public void setDate(Date date) {
+	public void setDate(String date) {
 		this.date = date;
 	}
 	public String getAuthor() {
