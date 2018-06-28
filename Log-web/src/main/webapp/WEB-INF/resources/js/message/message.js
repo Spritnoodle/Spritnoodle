@@ -122,7 +122,7 @@ var messageGrid = new Ext.grid.GridPanel({
 			loadMask : true,
 			stripeRows : true,
 			width : 600,
-			title : '学生基本信息列表',
+			title : '消息信息列表',
 			columns : [{
 						text : 'ID',
 						width : 50,

@@ -1,15 +1,15 @@
 Ext.define('message.controller.MessageController', {
 	extend : 'Ext.app.Controller',
-	alias : 'widget.MessageController',
+	alias : 'widget.messageController',
 	stores : [ 'MessageStore' ],
 	models : [ 'MessageModel' ],
 	views : [ 'MessageGrid', 'MessageEdit' ],
 	init : function() {
 		this.control({
-			'MessageGrid' : {
+			'messageGrid' : {
 				itemdblclick : this.editMessage
 			},
-			'MessageEdit button[action=save]' : {
+			'messageEdit button[action=save]' : {
 				click : this.updateMessage
 			}
 		});
