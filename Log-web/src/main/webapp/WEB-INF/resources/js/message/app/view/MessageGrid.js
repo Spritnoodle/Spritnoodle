@@ -5,7 +5,7 @@ var messageStore = Ext.create('message.store.MessageStore');
 Ext.define('message.view.MessageGrid', {
 	extend : 'Ext.grid.GridPanel',
 	alias : 'widget.messageGrid',
-	title : 'Java EE message 信息',
+	title : 'Java EE message',
 	store : messageStore,
 	columns : [ {
 		text : 'ID',

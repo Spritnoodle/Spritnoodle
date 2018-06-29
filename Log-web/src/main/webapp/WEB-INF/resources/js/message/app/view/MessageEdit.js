@@ -1,7 +1,7 @@
 Ext.define('message.view.MessageEdit', {
 	extend : 'Ext.window.Window',
 	alias : 'widget.messageEdit',
-	title : '编辑学生信息',
+	title : '编辑消息',
 	layout : 'fit',
 	autoShow : true,
 	initComponent : function() {
