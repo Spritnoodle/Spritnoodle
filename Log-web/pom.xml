@@ -11,7 +11,7 @@
 	<dependencies>
 		<dependency>
 			<groupId>edu.zut.cs.javaee</groupId>
-			<artifactId>log-service</artifactId>
+			<artifactId>Log-service</artifactId>
 			<version>0.0.1-SNAPSHOT</version>
 		</dependency>
 
@@ -42,7 +42,7 @@
 				<configuration>
 					<scanIntervalSeconds>10</scanIntervalSeconds>
 					<webApp>
-						<contextPath>/log-web</contextPath>
+						<contextPath>/Log-web</contextPath>
 					</webApp>
 				</configuration>
 			</plugin>
