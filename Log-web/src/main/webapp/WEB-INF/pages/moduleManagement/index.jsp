@@ -8,7 +8,7 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Java EE 任务模块管理</title>
+<title>Java EE 任务管理信息</title>
 </head>
 <link rel="stylesheet" type="text/css"
 	href="<%=extjsPath%>resources/css/ext-all-neptune.css">
@@ -23,7 +23,8 @@
 	var server_context = basePath;
 </script>
 <script type="text/javascript"
-	src="${pageContext.request.contextPath}/resources/js/message/app.js"></script>
+	src="${pageContext.request.contextPath}/resources/js/moduleManagement/moduleManagement.js"></script>
 <body>
+
 </body>
 </html>
