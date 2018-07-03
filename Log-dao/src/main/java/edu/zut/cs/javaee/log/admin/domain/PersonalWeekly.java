@@ -25,15 +25,15 @@ public class PersonalWeekly extends BaseTreeEntity<PersonalWeekly>{
 	private String personalWeekly;
 	@Column(name = "MESSAGE")
 	private String message;
-	@Column(name = "WDATE")
-	private Date date;
+	@Column(name = "DATE")
+	private String date;
 	@Column(name = "UID")
 	private String uid;
-	@Column(name = "UNAME")
-	private String uname;
-	
 	public String getPersonalWeekly() {
 		return personalWeekly;
+	}
+	public void setPersonalWeekly(String personalWeekly) {
+		this.personalWeekly = personalWeekly;
 	}
 	public String getMessage() {
 		return message;
@@ -41,10 +41,10 @@ public class PersonalWeekly extends BaseTreeEntity<PersonalWeekly>{
 	public void setMessage(String message) {
 		this.message = message;
 	}
-	public Date getDate() {
+	public String getDate() {
 		return date;
 	}
-	public void setDate(Date date) {
+	public void setDate(String date) {
 		this.date = date;
 	}
 	public String getUid() {
@@ -62,11 +62,8 @@ public class PersonalWeekly extends BaseTreeEntity<PersonalWeekly>{
 	public static long getSerialversionuid() {
 		return serialVersionUID;
 	}
-	public void setPersonalWeekly(String string) {
-		// TODO Auto-generated method stub
-		
-	}
-	
+	@Column(name = "UNAME")
+	private String uname;
 	
 }
 

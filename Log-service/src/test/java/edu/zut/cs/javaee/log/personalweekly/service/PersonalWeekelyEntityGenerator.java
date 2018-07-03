@@ -12,19 +12,19 @@ import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 import org.junit.Before;
 import org.junit.Test;
 import org.springframework.beans.factory.annotation.Autowired;
-
 import edu.zut.cs.javaee.log.admin.domain.PersonalWeekly;
 import edu.zut.cs.javaee.log.admin.service.PersonalWeeklyManager;
 import edu.zut.cs.javaee.log.admin.service.UserManagerTest;
 import edu.zut.cs.javaee.log.base.service.GenericGenerator;
 
 public class PersonalWeekelyEntityGenerator extends GenericGenerator{
-List<PersonalWeekly> personalweeklyList;
+	
+	List<PersonalWeekly> personalweeklyList;
 	
 	PersonalWeeklyManager personalweeklyManager;
 	
 	@Autowired
-	public void setPersonalWeeklyManager(PersonalWeeklyManager personalWeeklyManager) {
+	public void setPersonalWeeklyManager(PersonalWeeklyManager personalweeklyManager) {
 		this.personalweeklyManager=personalweeklyManager;
 	}
 	
@@ -49,7 +49,7 @@ List<PersonalWeekly> personalweeklyList;
 						m.setDate(value);
 					if(j==3)
 						m.setUname(value);
-					if(j==5) {
+					if(j==5){
 						m.setUid(value);
 					}
 				}
@@ -66,5 +66,4 @@ List<PersonalWeekly> personalweeklyList;
 			logger.info("test() - List<Student> result=" + result); //$NON-NLS-1$
 		}
 	}
-
 }

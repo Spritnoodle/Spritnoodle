@@ -53,7 +53,7 @@ Ext.define('personalweekly.view.PersonalWeeklyGrid', {
 
 	bbar : new Ext.PagingToolbar({
 		pageSize : pageSize,// 每页显示的记录值
-		store : messageStore,
+		store : personalweeklyStore,
 		displayInfo : true,
 		firstTest : '首页',
 		lastText : '尾页',
