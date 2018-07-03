@@ -25,21 +25,28 @@ public class ChatMessage extends BaseTreeEntity<ChatMessage>{
 	@Column(name = "CHATMESSAGE")
 	private String chatmessage;
 	@Column(name = "DATE")
-	private Date date;
+	private String date;
 	@Column(name = "SPOKESMAN")
 	private String spokesman;
 	
-	public String getChatMessage() {
+//	public String getChatMessage() {
+//		return chatmessage;
+//	}
+//	public void setChatMessage(String chatmessage) {
+//		this.chatmessage = chatmessage;
+//	}
+	
+	
+	public String getChatmessage() {
 		return chatmessage;
 	}
-	public void setChatMessage(String chatmessage) {
+	public void setChatmessage(String chatmessage) {
 		this.chatmessage = chatmessage;
 	}
-	
-	public Date getDate() {
+	public String getDate() {
 		return date;
 	}
-	public void setDate(Date date) {
+	public void setDate(String date) {
 		this.date = date;
 	}
 	public String getSpokesman() {
