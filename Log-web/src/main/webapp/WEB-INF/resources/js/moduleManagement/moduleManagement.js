@@ -215,12 +215,12 @@ var queryForm = function() {
 }
 var moduleManagementForm = new Ext.form.FormPanel({
 			title : '信息查询',
-			width : 200,
-			height : 200,
+			width : 0,
+			height : 0,
 			frame : true,
 			region : 'north',
 			defaultType : 'textfiled',
-			labelWidth : 30,
+			labelWidth : 0,
 			items : [{
 						fieldLabel : "小组",
 						xtype : 'textfield',
