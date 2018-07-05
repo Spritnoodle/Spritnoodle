@@ -19,6 +19,11 @@ import edu.zut.cs.javaee.log.admin.service.StatisticsManager;
 import edu.zut.cs.javaee.log.admin.service.UserManagerTest;
 import edu.zut.cs.javaee.log.base.service.GenericGenerator;
 
+/**
+ * @author G0die
+ * 将xlsx表格中的内容导入到数据库中
+ */
+
 public class StatisticsEntityGenerator extends GenericGenerator{
 	
 	List<Statistics> statisticsList;

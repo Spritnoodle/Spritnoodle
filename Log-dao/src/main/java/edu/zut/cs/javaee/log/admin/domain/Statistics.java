@@ -7,6 +7,11 @@ import javax.persistence.NamedQuery;
 import javax.persistence.Table;
 import edu.zut.cs.javaee.log.base.domain.BaseTreeEntity;
 
+/**
+ * @author G0die 
+ * 用于建表的实体类
+ */
+
 @Table(name = "T_STATISTICS")
 @Entity
 @NamedQueries({@NamedQuery(name="Statistics.getRoot",query="select m from Statistics m where m.parent is null")})

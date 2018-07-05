@@ -9,6 +9,10 @@ import edu.zut.cs.javaee.log.admin.domain.Statistics;
 import edu.zut.cs.javaee.log.admin.service.StatisticsManager;
 import edu.zut.cs.javaee.log.base.web.spring.controller.GenericController;
 
+/**
+ * @author G0die
+ */
+
 @Controller
 @RequestMapping("/statistics/statistics")
 public class StatisticsController extends GenericController<Statistics, Long, StatisticsManager>{
