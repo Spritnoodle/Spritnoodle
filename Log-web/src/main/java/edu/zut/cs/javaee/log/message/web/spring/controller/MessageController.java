@@ -9,12 +9,18 @@ import edu.zut.cs.javaee.log.admin.domain.Message;
 import edu.zut.cs.javaee.log.admin.service.MessageManager;
 import edu.zut.cs.javaee.log.base.web.spring.controller.GenericController;
 
+/**
+ * 
+ * @author yifei
+ *
+ */
 @Controller
+// 地址映射
 @RequestMapping("/message/message")
-public class MessageController extends GenericController<Message, Long, MessageManager>{
-	
+public class MessageController extends GenericController<Message, Long, MessageManager> {
+
 	MessageManager messageManager;
-	
+
 	@RequestMapping(method = RequestMethod.GET, value = "/index.html")
 	public String index() {
 		String result = "/message/index";
