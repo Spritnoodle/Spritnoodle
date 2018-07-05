@@ -9,6 +9,11 @@ import edu.zut.cs.javaee.log.admin.domain.ModuleManagement;
 import edu.zut.cs.javaee.log.admin.service.ModuleManagementManager;
 import edu.zut.cs.javaee.log.base.web.spring.controller.GenericController;
 
+/**
+ * 
+ * @author xiawenlaing
+ * Controller
+ */
 @Controller
 @RequestMapping("/moduleManagement")
 public class ModuleManagementController extends GenericController<ModuleManagement, Long, ModuleManagementManager>{

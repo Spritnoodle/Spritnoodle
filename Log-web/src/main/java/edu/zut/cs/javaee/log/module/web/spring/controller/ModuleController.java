@@ -8,6 +8,10 @@ import edu.zut.cs.javaee.log.base.web.spring.controller.GenericTreeController;
 import edu.zut.cs.javaee.log.module.domain.Module;
 import edu.zut.cs.javaee.log.module.service.ModuleManager;
 
+/**
+ * @author xiawenliang
+ */
+
 @Controller
 @RequestMapping("/module")
 public class ModuleController extends GenericTreeController<Module, Long, ModuleManager> {

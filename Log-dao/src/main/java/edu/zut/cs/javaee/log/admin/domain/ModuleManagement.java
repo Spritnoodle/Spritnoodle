@@ -12,8 +12,14 @@ import javax.persistence.Table;
 
 import edu.zut.cs.javaee.log.base.domain.BaseTreeEntity;
 
+/**
+ * 
+ * @author yifei 用于建表的实体类
+ */
 @Table(name = "T_MODULEa")
+//这是一个实体bean
 @Entity
+//定义多个命名查询
 @NamedQueries({@NamedQuery(name="ModuleManagement.getRoot",query="select m from ModuleManagement m where m.parent is null")})
 public class ModuleManagement extends BaseTreeEntity<ModuleManagement>{
 	/**

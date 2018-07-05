@@ -21,6 +21,12 @@ import edu.zut.cs.javaee.log.admin.service.ModuleManagementManager;
 import edu.zut.cs.javaee.log.admin.service.UserManagerTest;
 import edu.zut.cs.javaee.log.base.service.GenericGenerator;
 
+/**
+ * 
+ * @author xiawenliang
+ * 
+ * 将xlsx表格中的内容导入到数据库中
+ */
 public class ModuleManagementEntityGenerator extends GenericGenerator{
 	
 	List<ModuleManagement> moduleManagementList;
