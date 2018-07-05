@@ -19,6 +19,12 @@ import edu.zut.cs.javaee.log.admin.service.MessageManager;
 import edu.zut.cs.javaee.log.admin.service.UserManagerTest;
 import edu.zut.cs.javaee.log.base.service.GenericGenerator;
 
+/**
+ * 
+ * @author yifei
+ * 
+ * 将xlsx表格中的内容导入到数据库中
+ */
 public class MessageEntityGenerator extends GenericGenerator{
 	
 	List<Message> messageList;
