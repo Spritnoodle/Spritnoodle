@@ -8,8 +8,13 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import edu.zut.cs.javaee.log.admin.domain.ChatMessage;
 import edu.zut.cs.javaee.log.admin.service.ChatMessageManager;
 import edu.zut.cs.javaee.log.base.web.spring.controller.GenericController;
-
+/**
+ * 
+ * @author gongmin
+ *
+ */
 @Controller
+//地址映射
 @RequestMapping("/chatmessage/chatmessage")
 public class ChatMessageController extends GenericController<ChatMessage, Long, ChatMessageManager>{
 	
