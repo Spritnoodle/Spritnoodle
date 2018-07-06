@@ -10,7 +10,14 @@ import edu.zut.cs.javaee.log.admin.dao.PersonalMessageDao;
 import edu.zut.cs.javaee.log.admin.domain.PersonalMessage;
 import edu.zut.cs.javaee.log.admin.service.PersonalMessageManager;
 import edu.zut.cs.javaee.log.base.service.impl.GenericTreeManagerImpl;
+/**
+ * 
+ * @author zhouhuiquan
+ *
+ */
+// 实例化MessageManager
 @Service("personalmessageManager")
+// 声明事务
 @Transactional
 public class PersonalMessageManagerImpl extends GenericTreeManagerImpl<PersonalMessage, Long>implements PersonalMessageManager {
 	

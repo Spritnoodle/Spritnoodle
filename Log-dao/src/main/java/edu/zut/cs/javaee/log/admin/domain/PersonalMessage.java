@@ -8,8 +8,15 @@ import javax.persistence.NamedQuery;
 import javax.persistence.Table;
 
 import edu.zut.cs.javaee.log.base.domain.BaseTreeEntity;
+/**
+ * 
+ * @author zhouhuiquan 用于建表的实体类
+ */
+// 数据库映射的表名
 @Table(name = "T_Personal")
+// 这是一个实体bean
 @Entity
+// 定义多个命名查询
 @NamedQueries({@NamedQuery(name="PersonalMessage.getRoot",query="select p from PersonalMessage p where p.parent is null")})
 
 public class PersonalMessage extends BaseTreeEntity<PersonalMessage> {
@@ -20,6 +27,7 @@ public class PersonalMessage extends BaseTreeEntity<PersonalMessage> {
 	/**
 	 * 
 	 */
+	 	// 对应表中的列名
 	@Column(name = "PERSONALMESSAGE")
 	private String personalmessage;
 	@Column(name = "GRADE")

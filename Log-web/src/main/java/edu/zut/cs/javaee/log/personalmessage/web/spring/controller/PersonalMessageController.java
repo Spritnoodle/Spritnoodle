@@ -8,8 +8,13 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import edu.zut.cs.javaee.log.admin.domain.PersonalMessage;
 import edu.zut.cs.javaee.log.admin.service.PersonalMessageManager;
 import edu.zut.cs.javaee.log.base.web.spring.controller.GenericController;
-
+/**
+ * 
+ * @author zhouhuiquan
+ *
+ */
 @Controller
+// 地址映射
 @RequestMapping("/personalmessage/personalmessage")
 
 public class PersonalMessageController extends GenericController<PersonalMessage, Long, PersonalMessageManager> {

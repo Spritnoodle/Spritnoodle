@@ -16,7 +16,12 @@ import edu.zut.cs.javaee.log.admin.domain.PersonalMessage;
 import edu.zut.cs.javaee.log.admin.service.PersonalMessageManager;
 import edu.zut.cs.javaee.log.admin.service.UserManagerTest;
 import edu.zut.cs.javaee.log.base.service.GenericGenerator;
-
+/**
+ * 
+ * @author zhouhuiquan
+ * 
+ * 将xlsx表格中的内容导入到数据库中
+ */
 public class PersonalMessageEntityGenerator extends GenericGenerator{
 	
 	List<PersonalMessage> personalmessageList;
