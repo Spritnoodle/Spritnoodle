@@ -20,6 +20,13 @@ import edu.zut.cs.javaee.log.admin.service.TeamInformationManager;
 import edu.zut.cs.javaee.log.admin.service.UserManagerTest;
 import edu.zut.cs.javaee.log.base.service.GenericGenerator;
 
+/**
+ * 
+ * @author heads43
+ * 
+ * 将xlsx表格中的内容导入到数据库中
+ */
+
 public class TeamInformationEntityGenerator extends GenericGenerator{
 List<TeamInformation> teaminformationList;
 	

@@ -9,8 +9,15 @@ import javax.persistence.Table;
 
 import edu.zut.cs.javaee.log.base.domain.BaseTreeEntity;
 
+/**
+ * 
+ * @author heads43 用于建表的实体类
+ */
+// 数据库映射的表名
 @Table(name = "T_TeamInformation")
+// 这是一个实体bean
 @Entity
+// 定义多个命名查询
 @NamedQueries({@NamedQuery(name="TeamInformation.getRoot",query="select m from TeamInformation m where m.parent is null")})
 public class TeamInformation extends BaseTreeEntity<TeamInformation>{
 	/**
@@ -20,7 +27,7 @@ public class TeamInformation extends BaseTreeEntity<TeamInformation>{
 	/**
 	 * 
 	 */
-	
+	// 对应表中的列名
 	@Column(name = "TeamInformation")
 	private String teamInformation;
 	@Column(name = "TID")

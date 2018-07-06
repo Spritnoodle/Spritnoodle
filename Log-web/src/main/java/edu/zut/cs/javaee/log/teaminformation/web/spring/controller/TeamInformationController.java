@@ -11,6 +11,14 @@ import edu.zut.cs.javaee.log.admin.service.PersonalWeeklyManager;
 import edu.zut.cs.javaee.log.admin.service.TeamInformationManager;
 import edu.zut.cs.javaee.log.base.web.spring.controller.GenericController;
 
+
+/**
+ * 
+ * @author heads43
+ *
+ */
+
+// 地址映射
 @Controller
 @RequestMapping("/teaminformation/teaminformation")
 public class TeamInformationController extends GenericController<TeamInformation, Long, TeamInformationManager> {
