@@ -20,7 +20,7 @@ import edu.zut.cs.javaee.log.base.service.GenericGenerator;
  * 
  * @author zhouhuiquan
  * 
- * 将xlsx表格中的内容导入到数据库中
+ * 将xlsx表格中的内容导入到数据库
  */
 public class PersonalMessageEntityGenerator extends GenericGenerator{
 	
