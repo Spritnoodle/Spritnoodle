@@ -10,8 +10,16 @@ import edu.zut.cs.javaee.log.admin.domain.PersonalWeekly;
 import edu.zut.cs.javaee.log.admin.service.PersonalWeeklyManager;
 import edu.zut.cs.javaee.log.base.service.impl.GenericTreeManagerImpl;
 
-
+/**
+ * 
+ * 
+ * 
+ * @author dell
+ *
+ */
+//实例化personalweeklymanager
 @Service("personalWeeklyManager")
+//声明事务
 @Transactional
 public class PersonalWeeklyManagerImpl extends GenericTreeManagerImpl<PersonalWeekly, Long> implements PersonalWeeklyManager{
 

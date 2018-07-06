@@ -10,8 +10,11 @@ import javax.persistence.Table;
 
 import edu.zut.cs.javaee.log.base.domain.BaseTreeEntity;
 
+//数据库映射的表名
 @Table(name = "T_PersonalWeekly")
+//这是一个实体的bean对象
 @Entity
+//定义多个查询
 @NamedQueries({@NamedQuery(name="PersonalWeekly.getRoot",query="select p from PersonalWeekly p where p.parent is null")})
 public class PersonalWeekly extends BaseTreeEntity<PersonalWeekly>{
 	/**
@@ -21,6 +24,8 @@ public class PersonalWeekly extends BaseTreeEntity<PersonalWeekly>{
 	/**
 	 * 
 	 */
+	
+	//对应数据库中的列名
 	@Column(name="PERSONALWEEKLY")
 	private String personalWeekly;
 	@Column(name = "MESSAGE")

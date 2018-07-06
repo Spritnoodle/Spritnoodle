@@ -9,14 +9,8 @@ import edu.zut.cs.javaee.log.admin.dao.ChatMessageDao;
 import edu.zut.cs.javaee.log.admin.domain.ChatMessage;
 import edu.zut.cs.javaee.log.admin.service.ChatMessageManager;
 import edu.zut.cs.javaee.log.base.service.impl.GenericTreeManagerImpl;
-/**
- * 
- * @author gongmin
- *
- */
-// 实例化MessageManager
+
 @Service("chatmessageManager")
-//声明事务
 @Transactional
 public class ChatMessageManagerlmpl extends GenericTreeManagerImpl<ChatMessage,Long> implements ChatMessageManager{
 	
