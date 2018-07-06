@@ -1,6 +1,7 @@
 package edu.zut.cs.javaee.log.personalweekly.service;
 
 import java.io.InputStream;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -16,6 +17,11 @@ import edu.zut.cs.javaee.log.admin.domain.PersonalWeekly;
 import edu.zut.cs.javaee.log.admin.service.PersonalWeeklyManager;
 import edu.zut.cs.javaee.log.admin.service.UserManagerTest;
 import edu.zut.cs.javaee.log.base.service.GenericGenerator;
+/**
+ * 
+ * @author dell
+ *将xlsx表格中的内容导入到数据库中
+ */
 
 public class PersonalWeekelyEntityGenerator extends GenericGenerator{
 	

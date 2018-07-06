@@ -9,7 +9,13 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import edu.zut.cs.javaee.log.admin.domain.PersonalWeekly;
 import edu.zut.cs.javaee.log.admin.service.PersonalWeeklyManager;
 
+/**
+ * 
+ * @author dell
+ *
+ */
 @Controller
+//地址映射
 @RequestMapping("/personalweekly/personalweekly")
 public class PersonalWeeklyController extends GenericController<PersonalWeekly, Long, PersonalWeeklyManager> {
 PersonalWeeklyManager personalweeklyManager;
