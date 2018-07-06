@@ -10,8 +10,15 @@ import javax.persistence.Table;
 
 import edu.zut.cs.javaee.log.base.domain.BaseTreeEntity;
 
+/**
+ * 
+ * @author gongmin 用于建表的实体类
+ */
+// 数据库映射的表名
 @Table(name = "T_CHATMESSAGE")
+// 这是一个实体bean
 @Entity
+// 定义多个命名查询
 @NamedQueries({@NamedQuery(name="ChatMessage.getRoot",query="select c from ChatMessage c where c.parent is null")})
 public class ChatMessage extends BaseTreeEntity<ChatMessage>{
 	/**
@@ -21,7 +28,7 @@ public class ChatMessage extends BaseTreeEntity<ChatMessage>{
 	/**
 	 * 
 	 */
-	
+	// 对应表中的列名
 	@Column(name = "CHATMESSAGE")
 	private String chatmessage;
 	@Column(name = "DATE")

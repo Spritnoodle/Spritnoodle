@@ -17,7 +17,12 @@ import edu.zut.cs.javaee.log.admin.domain.ChatMessage;
 import edu.zut.cs.javaee.log.admin.service.ChatMessageManager;
 import edu.zut.cs.javaee.log.admin.service.UserManagerTest;
 import edu.zut.cs.javaee.log.base.service.GenericGenerator;
-
+/**
+ * 
+ * @author gongmin
+ * 
+ * 将xlsx表格中的内容导入到数据库中
+ */
 public class ChatMessageEntityGenerator extends GenericGenerator{
 	
 	List<ChatMessage> chatmessageList;
